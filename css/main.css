@@ -1,0 +1,62 @@
+/* general styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: dodgerblue;
+}
+
+/* GRID */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    margin: 60px auto;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.square {
+    display: grid;
+    place-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.square-even.active {
+    background-color: green;
+}
+
+.square-odd.active {
+    background-color: red;
+}
+
+.square span {
+    display: none;
+}
+
+.square.active span {
+    display: block;
+}
+
+
+.toolbar {
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    box-shadow: 0 3px 5px rgba(0,0,0, .5);
+}
+
+.wrap-grid {
+    text-align: center;
+}
+
+
